@@ -1,0 +1,17 @@
+package com.ta.mapper;
+
+import com.ta.pojo.TblResource;
+
+public interface TblResourceMapper {
+    int deleteByPrimaryKey(Integer id);
+
+    int insert(TblResource record);
+
+    int insertSelective(TblResource record);
+
+    TblResource selectByPrimaryKey(Integer id);
+
+    int updateByPrimaryKeySelective(TblResource record);
+
+    int updateByPrimaryKey(TblResource record);
+}
